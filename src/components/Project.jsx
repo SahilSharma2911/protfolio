@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import swiggyimg from '../img/swiggy.png'
 import weatherimg from '../img/weather.png'
 import socialimg from '../img/social.png'
+import mapimg from '../img/map.png'
 import { BsGlobe, BsGithub } from 'react-icons/bs'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -47,6 +48,25 @@ export default function Project() {
 
             </a> */}
             <a href="https://github.com/SahilSharma2911/socialmedia" className=" hover:underline">
+              <div className="mx-8 flex flex-col justify-center items-center"><BsGithub className='h-[25px] w-[25px]' /> Github</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr className="my-[50px] mx-[15vw]" />
+      <div className="flex flex-col sm:flex-row px-[40px] sm:px-[100px] md:px-[200px] mt-6 text-gray-600 w-[100vw]  m-auto p-5 ">
+        <div className=" w-[80vw]">
+          <img src={mapimg } alt="" className='drop-shadow-md' />
+        </div>
+        <div className="mt-5 sm:mt-0 sm:ml-10 flex flex-col w-full">
+          <h1 className='text-[20px] font-bold'>ST Social</h1>
+          <p className='mt-5'>Created a project, which is a dynamic web application built on the MERN (MongoDB, Express.js, React, Node.js) stack, offering a seamless experience for mapping and pinning locations using the powerful MapBox API. </p>
+          <div className='flex mt-12 ml-12'>
+            {/* <a href="" className="hover:underline">
+              <div className="mx-8 flex flex-col justify-center items-center"> <BsGlobe className="h-[25px] w-[25px]" /> Website</div>
+
+            </a> */}
+            <a href="https://github.com/SahilSharma2911/mapPin" className=" hover:underline">
               <div className="mx-8 flex flex-col justify-center items-center"><BsGithub className='h-[25px] w-[25px]' /> Github</div>
             </a>
           </div>
